@@ -1,0 +1,262 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Common steps for Login Page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2650417900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User needs to be on Instagram Login Page",
+            "match": {
+              "location": "Instagram_Login_SD.User_Needs_to_be_on_Instagram_Login_Page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2660306100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Instagram_Login_SD.beforeSetup()"
+            }
+          }
+        ],
+        "line": 21,
+        "name": "Validate password field",
+        "description": "",
+        "id": "create-account-on-instagram;validate-password-field;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 664505200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Instagram_Login_SD.AfterTeardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1637336100,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User enters \"Rana\" username",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Rana",
+                  "offset": 13
+                }
+              ],
+              "location": "Instagram_Login_SD.user_enters_username(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1230881500,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User enters \"abcd\" password",
+            "match": {
+              "arguments": [
+                {
+                  "val": "abcd",
+                  "offset": 13
+                }
+              ],
+              "location": "Instagram_Login_SD.user_enters_password(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1090648700,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User checks username is present",
+            "match": {
+              "location": "Instagram_Login_SD.user_checks_username_present()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1065655100,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User checks password is present",
+            "match": {
+              "location": "Instagram_Login_SD.user_checks_input_password()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 12,
+            "name": "@RegressionTest"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Common steps for Login Page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1808113600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User needs to be on Instagram Login Page",
+            "match": {
+              "location": "Instagram_Login_SD.User_Needs_to_be_on_Instagram_Login_Page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1634816900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Instagram_Login_SD.beforeSetup()"
+            }
+          }
+        ],
+        "line": 22,
+        "name": "Validate password field",
+        "description": "",
+        "id": "create-account-on-instagram;validate-password-field;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 666667800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Instagram_Login_SD.AfterTeardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1495372200,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User enters \"Gaurav\" username",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Gaurav",
+                  "offset": 13
+                }
+              ],
+              "location": "Instagram_Login_SD.user_enters_username(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1193124000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User enters \"efg\" password",
+            "match": {
+              "arguments": [
+                {
+                  "val": "efg",
+                  "offset": 13
+                }
+              ],
+              "location": "Instagram_Login_SD.user_enters_password(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1070699000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User checks username is present",
+            "match": {
+              "location": "Instagram_Login_SD.user_checks_username_present()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1040539300,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User checks password is present",
+            "match": {
+              "location": "Instagram_Login_SD.user_checks_input_password()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 12,
+            "name": "@RegressionTest"
+          }
+        ]
+      }
+    ],
+    "name": "Create Account on Instagram",
+    "description": "As a user you need to open Instagram Page",
+    "id": "create-account-on-instagram",
+    "keyword": "Feature",
+    "uri": "Instagram_Login_FF.feature"
+  }
+]

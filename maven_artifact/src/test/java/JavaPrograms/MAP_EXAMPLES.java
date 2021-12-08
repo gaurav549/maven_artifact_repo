@@ -20,9 +20,15 @@ public class MAP_EXAMPLES {
 		hm.put(3, "Banana \n");
 		hm.put(1, "Grapes \n");
 		hm.put(null, null);
-		System.out.println(hm);
-		
+		for (int i=1; i<=hm.size(); i++)
+		{
+		System.out.println(hm.get(hm) + hm.get(i));
+
+			
+			
+		}
 	}
+		
 	
 	public void LinkedHashMap() {
 		
@@ -33,7 +39,7 @@ public class MAP_EXAMPLES {
 		lhm.put(3, "Banana \n");
 		lhm.put(1, "Grapes \n");
 		lhm.put(null, null);
-		System.out.println(lhm);
+		System.out.println("LinkedHashMap:" + lhm);
 		
 	}
 	
@@ -45,7 +51,7 @@ public class MAP_EXAMPLES {
 		tm.put(2, "Orange \n");
 		tm.put(3, "Banana \n");
 		tm.put(1, "Grapes \n");
-		System.out.println(tm);
+		System.out.println("TreeHashMap:" +tm);
 		
 	}
 

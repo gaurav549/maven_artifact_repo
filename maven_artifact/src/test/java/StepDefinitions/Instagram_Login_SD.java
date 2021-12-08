@@ -3,7 +3,7 @@ package StepDefinitions;
 
 import org.junit.Assert;
 
-
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 
@@ -11,6 +11,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import cucumber.api.DataTable;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
@@ -24,6 +25,7 @@ public class Instagram_Login_SD {
 	public void beforeSetup() {
 		System.setProperty("webdriver.chrome.driver", "E:\\Cucumber\\chromedriver_win32\\chromedriver.exe");
 		driv1 = new ChromeDriver();
+		driv1.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	}
 
 	@Given (value="^User needs to be on Instagram Login Page$",timeout=5000)
@@ -43,6 +45,20 @@ public class Instagram_Login_SD {
 		driv1.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driv1.findElement(By.xpath("//input[@name='password']")).sendKeys(password);
 		Thread.sleep(1000);
+		
+	}
+	
+	@When (value="^User enters following data$",timeout=5000) 
+	public void User_enters_following_data(DataTable table)
+	{
+		driv1.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		List<List<String>> data= table.raw();
+		String value1 = data.get(0).get(0);
+		String value2 = data.get(0).get(1);
+		String value3 = data.get(1).get(0);
+		String value4 = data.get(1).get(1);
+		driv1.findElement(By.xpath("//input[@name='username']")).sendKeys(value3);
+		driv1.findElement(By.xpath("//input[@name='password']")).sendKeys(value4);
 		
 	}
 	

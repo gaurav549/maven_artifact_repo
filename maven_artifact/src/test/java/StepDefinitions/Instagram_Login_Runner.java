@@ -9,7 +9,7 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
 		features = {"src\\test\\resources\\Features"},
 		glue = {"StepDefinitions"},
-		tags = {"@RegressionTest","~@SmokeTest"},
+		tags = {"@RegressionTest,@FunctionalTest","~@SmokeTest"},
 		monochrome=true,	
 				plugin = {"pretty", "html:target/cucumber-htmlreport","json:target/cucumber-report.json",
 		"com.cucumber.listener.ExtentCucumberFormatter:target/ExtentReport.html"}

@@ -21,3 +21,9 @@ Examples:
 | "Rana"			|  "abcd"  		|
 | "Gaurav"		|  "efg"  		|
 
+@FunctionalTest
+Scenario: Validate username and password field
+When User enters following data
+| username 		| password |
+| ELON_MUSK   | Test123  |
+

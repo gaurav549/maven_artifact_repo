@@ -1,13 +1,18 @@
 package StepDefinitions;
 
 
+import org.apache.commons.io.FileUtils;
 import org.junit.Assert;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -34,9 +39,11 @@ public class Instagram_Login_SD {
 	}
 	
 	@When (value="^User enters \"([^\"]*)\" username$",timeout=5000)
-	public void user_enters_username(String username) throws InterruptedException {
+	public void user_enters_username(String username) throws InterruptedException, IOException {
 		driv1.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driv1.findElement(By.xpath("//input[@name='username']")).sendKeys(username);
+		File Inta_Login_Screenshot = ((TakesScreenshot)driv1).getScreenshotAs(OutputType.FILE);
+		FileUtils.copyFile(Inta_Login_Screenshot, new File("C:\\Users\\gaura\\eclipse-workspace\\maven_artifact\\Selenium Screenshots\\Inta_Login_Screenshot.jpg"));
 		Thread.sleep(1000);
 	}
 	
@@ -53,8 +60,8 @@ public class Instagram_Login_SD {
 	{
 		driv1.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		List<List<String>> data= table.raw();
-		String value1 = data.get(0).get(0);
-		String value2 = data.get(0).get(1);
+		//String value1 = data.get(0).get(0);
+		//String value2 = data.get(0).get(1);
 		String value3 = data.get(1).get(0);
 		String value4 = data.get(1).get(1);
 		driv1.findElement(By.xpath("//input[@name='username']")).sendKeys(value3);
@@ -76,8 +83,6 @@ public class Instagram_Login_SD {
 		String password_actual_val=driv1.findElement(By.xpath("//input[@name='password']")).getAttribute("value");
 		Assert.assertTrue(password_actual_val.matches("abcd|efg"));
 		Thread.sleep(1000);
-	
-		
 	}
 	
 	@After

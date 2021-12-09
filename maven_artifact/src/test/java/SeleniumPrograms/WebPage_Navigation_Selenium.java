@@ -35,14 +35,15 @@ public class WebPage_Navigation_Selenium {
 
 		//		wp_nav.Radio_Button();
 
-		//wp_nav.Drop_Down();
+		wp_nav.Drop_Down();
 
 		//		wp_nav.Drag_Drop() ;
 		//		wp_nav.Scroll_Down();
 		//		wp_nav.Alerts();
-		wp_nav.Drop_Down_Without_Select();
+		//wp_nav.Drop_Down_Without_Select();
 		//wp_nav.Check_Box();
 		//wp_nav.Broken_Link();
+		//wp_nav.Java_Script();
 	}
 
 	public  void Instagram() throws IOException, InterruptedException {
@@ -91,7 +92,7 @@ public class WebPage_Navigation_Selenium {
 	}
 
 	public void Drop_Down() throws IOException, InterruptedException {
-		driv1.get("file:///C:/Users/gaura/eclipse-workspace/maven_artifact/Selenium Screenshots/DropDown.html");
+		driv1.get("file:///C:\\Users\\gaura\\OneDrive\\Documents\\GitHub\\maven_artifact_repo\\maven_artifact\\Selenium Screenshots/DropDown.html");
 		Select dropdown = new Select (driv1.findElement(By.id("testingDropdown")));
 		dropdown.selectByVisibleText("Database Testing");
 		
@@ -158,6 +159,18 @@ public class WebPage_Navigation_Selenium {
 
 		//driv1.close();
 	}
+	
+	
+     public void Java_Script() {
+    	 
+ 		driv1.manage().window().maximize();
+ 		String Insta ="https://www.instagram.com/?hl=en";
+ 		driv1.get(Insta);
+ 		driv1.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+ 		
+ 		JavascriptExecutor js = (JavascriptExecutor)driv1;
+ 		js.executeScript("document.getElementById('loginForm').value='Selenium'");
+     }
 
 
 	public void Broken_Link() {

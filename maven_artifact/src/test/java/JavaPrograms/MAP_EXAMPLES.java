@@ -20,9 +20,9 @@ public class MAP_EXAMPLES {
 		hm.put(3, "Banana \n");
 		hm.put(1, "Grapes \n");
 		hm.put(null, null);
-		for (int i=1; i<=hm.size(); i++)
+		for (int i=1; i<=hm.size()-1; i++)
 		{
-		System.out.println(hm.get(hm) + hm.get(i));
+		System.out.println("HashMap:"+ hm.get(i));
 
 			
 			

@@ -57,6 +57,7 @@ public class Set_Examples {
 		ts.add("Pradeepta");
 		ts.add("Jyoti");
 		ts.add("Gaurav");
+	
 		Iterator it = ts.iterator();
 		System.out.println("\n Tree Set Output  :\n");
 		while (it.hasNext()) {

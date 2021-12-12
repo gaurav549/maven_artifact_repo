@@ -27,3 +27,9 @@ When User enters following data
 | username 		| password |
 | ELON_MUSK   | Test123  |
 
+#@DataDrivenTest
+#Scenario: Validate username and password field with columns
+#When User enters following data with column
+#| username 		| password |
+#| ELON TESLA  | Test123  |
+#| JEFF BEZOS	|	abcd		 |

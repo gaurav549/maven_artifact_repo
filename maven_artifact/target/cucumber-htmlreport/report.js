@@ -1,4 +1,70 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("Instagram_Login_FF.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("Google_Search_FF.feature");
+formatter.feature({
+  "line": 1,
+  "name": "Search in Google search engine",
+  "description": "As a user you need to navigate it to Google search page",
+  "id": "search-in-google-search-engine",
+  "keyword": "Feature"
+});
+formatter.before({
+  "duration": 1986706200,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 5,
+  "name": "Validate user search in Google search engine",
+  "description": "",
+  "id": "search-in-google-search-engine;validate-user-search-in-google-search-engine",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 4,
+      "name": "@RegressionTest"
+    }
+  ]
+});
+formatter.step({
+  "line": 6,
+  "name": "User needs to be on Google Search Page",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 7,
+  "name": "User search string in google page",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 8,
+  "name": "User checks search result",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "Instagram_Login_SD.User_needs_to_be_on_Google_Search_Page()"
+});
+formatter.result({
+  "duration": 921944500,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Instagram_Login_SD.Google()"
+});
+formatter.result({
+  "duration": 107670100,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Instagram_Login_SD.Google_Search_Result()"
+});
+formatter.result({
+  "duration": 1153647100,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 646815800,
+  "status": "passed"
+});
+formatter.uri("Instagram_Login_FF.feature");
 formatter.feature({
   "line": 1,
   "name": "Create Account on Instagram",
@@ -80,7 +146,7 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 2303486600,
+  "duration": 1189456500,
   "status": "passed"
 });
 formatter.background({
@@ -99,7 +165,7 @@ formatter.match({
   "location": "Instagram_Login_SD.User_Needs_to_be_on_Instagram_Login_Page()"
 });
 formatter.result({
-  "duration": 2085700400,
+  "duration": 1082954200,
   "status": "passed"
 });
 formatter.scenario({
@@ -152,7 +218,7 @@ formatter.match({
   "location": "Instagram_Login_SD.user_enters_username(String)"
 });
 formatter.result({
-  "duration": 1561293500,
+  "duration": 1676965100,
   "status": "passed"
 });
 formatter.match({
@@ -165,29 +231,29 @@ formatter.match({
   "location": "Instagram_Login_SD.user_enters_password(String)"
 });
 formatter.result({
-  "duration": 1224238800,
+  "duration": 1131085800,
   "status": "passed"
 });
 formatter.match({
   "location": "Instagram_Login_SD.user_checks_username_present()"
 });
 formatter.result({
-  "duration": 1099961300,
+  "duration": 1063501000,
   "status": "passed"
 });
 formatter.match({
   "location": "Instagram_Login_SD.user_checks_input_password()"
 });
 formatter.result({
-  "duration": 1053871900,
+  "duration": 1039076800,
   "status": "passed"
 });
 formatter.after({
-  "duration": 665766900,
+  "duration": 647620200,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1358655900,
+  "duration": 1269696100,
   "status": "passed"
 });
 formatter.background({
@@ -206,7 +272,7 @@ formatter.match({
   "location": "Instagram_Login_SD.User_Needs_to_be_on_Instagram_Login_Page()"
 });
 formatter.result({
-  "duration": 3713267600,
+  "duration": 1052540400,
   "status": "passed"
 });
 formatter.scenario({
@@ -259,7 +325,7 @@ formatter.match({
   "location": "Instagram_Login_SD.user_enters_username(String)"
 });
 formatter.result({
-  "duration": 1573035500,
+  "duration": 1679179800,
   "status": "passed"
 });
 formatter.match({
@@ -272,29 +338,29 @@ formatter.match({
   "location": "Instagram_Login_SD.user_enters_password(String)"
 });
 formatter.result({
-  "duration": 1212632600,
+  "duration": 1126486600,
   "status": "passed"
 });
 formatter.match({
   "location": "Instagram_Login_SD.user_checks_username_present()"
 });
 formatter.result({
-  "duration": 1081461100,
+  "duration": 1038311100,
   "status": "passed"
 });
 formatter.match({
   "location": "Instagram_Login_SD.user_checks_input_password()"
 });
 formatter.result({
-  "duration": 1053279600,
+  "duration": 1055027200,
   "status": "passed"
 });
 formatter.after({
-  "duration": 680003000,
+  "duration": 650624500,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1389310700,
+  "duration": 1191554600,
   "status": "passed"
 });
 formatter.background({
@@ -313,7 +379,7 @@ formatter.match({
   "location": "Instagram_Login_SD.User_Needs_to_be_on_Instagram_Login_Page()"
 });
 formatter.result({
-  "duration": 1345368800,
+  "duration": 1488919900,
   "status": "passed"
 });
 formatter.scenario({
@@ -352,14 +418,14 @@ formatter.step({
   "keyword": "When "
 });
 formatter.match({
-  "location": "Instagram_Login_SD.User_enters_following_data(DataTable)"
+  "location": "Instagram_Login_SD.User_enters_following_data1(DataTable)"
 });
 formatter.result({
-  "duration": 795479500,
+  "duration": 536419100,
   "status": "passed"
 });
 formatter.after({
-  "duration": 636202100,
+  "duration": 635320800,
   "status": "passed"
 });
 });

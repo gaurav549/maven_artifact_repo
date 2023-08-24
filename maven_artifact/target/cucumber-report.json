@@ -3,90 +3,6 @@
     "line": 1,
     "elements": [
       {
-        "before": [
-          {
-            "result": {
-              "duration": 1986706200,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Instagram_Login_SD.beforeSetup()"
-            }
-          }
-        ],
-        "line": 5,
-        "name": "Validate user search in Google search engine",
-        "description": "",
-        "id": "search-in-google-search-engine;validate-user-search-in-google-search-engine",
-        "after": [
-          {
-            "result": {
-              "duration": 646815800,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Instagram_Login_SD.AfterTeardown()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 921944500,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "User needs to be on Google Search Page",
-            "match": {
-              "location": "Instagram_Login_SD.User_needs_to_be_on_Google_Search_Page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 107670100,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "User search string in google page",
-            "match": {
-              "location": "Instagram_Login_SD.Google()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1153647100,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "User checks search result",
-            "match": {
-              "location": "Instagram_Login_SD.Google_Search_Result()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "line": 4,
-            "name": "@RegressionTest"
-          }
-        ]
-      }
-    ],
-    "name": "Search in Google search engine",
-    "description": "As a user you need to navigate it to Google search page",
-    "id": "search-in-google-search-engine",
-    "keyword": "Feature",
-    "uri": "Google_Search_FF.feature"
-  },
-  {
-    "line": 1,
-    "elements": [
-      {
         "line": 4,
         "name": "Common steps for Login Page",
         "description": "",
@@ -95,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1082954200,
+              "duration": 1108696000,
               "status": "passed"
             },
             "line": 5,
@@ -111,7 +27,7 @@
         "before": [
           {
             "result": {
-              "duration": 1189456500,
+              "duration": 2532391600,
               "status": "passed"
             },
             "match": {
@@ -126,7 +42,7 @@
         "after": [
           {
             "result": {
-              "duration": 647620200,
+              "duration": 637134800,
               "status": "passed"
             },
             "match": {
@@ -139,7 +55,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1676965100,
+              "duration": 1660173700,
               "status": "passed"
             },
             "line": 14,
@@ -160,7 +76,7 @@
           },
           {
             "result": {
-              "duration": 1131085800,
+              "duration": 1078745600,
               "status": "passed"
             },
             "line": 15,
@@ -181,7 +97,7 @@
           },
           {
             "result": {
-              "duration": 1063501000,
+              "duration": 1066773400,
               "status": "passed"
             },
             "line": 16,
@@ -193,7 +109,7 @@
           },
           {
             "result": {
-              "duration": 1039076800,
+              "duration": 1043021500,
               "status": "passed"
             },
             "line": 17,
@@ -220,7 +136,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1052540400,
+              "duration": 954344600,
               "status": "passed"
             },
             "line": 5,
@@ -236,7 +152,7 @@
         "before": [
           {
             "result": {
-              "duration": 1269696100,
+              "duration": 1776957200,
               "status": "passed"
             },
             "match": {
@@ -251,7 +167,7 @@
         "after": [
           {
             "result": {
-              "duration": 650624500,
+              "duration": 609863100,
               "status": "passed"
             },
             "match": {
@@ -264,7 +180,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1679179800,
+              "duration": 1637498900,
               "status": "passed"
             },
             "line": 14,
@@ -285,7 +201,7 @@
           },
           {
             "result": {
-              "duration": 1126486600,
+              "duration": 1123169800,
               "status": "passed"
             },
             "line": 15,
@@ -306,7 +222,7 @@
           },
           {
             "result": {
-              "duration": 1038311100,
+              "duration": 1043834300,
               "status": "passed"
             },
             "line": 16,
@@ -318,7 +234,7 @@
           },
           {
             "result": {
-              "duration": 1055027200,
+              "duration": 1050827100,
               "status": "passed"
             },
             "line": 17,
@@ -345,7 +261,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1488919900,
+              "duration": 896396200,
               "status": "passed"
             },
             "line": 5,
@@ -361,7 +277,7 @@
         "before": [
           {
             "result": {
-              "duration": 1191554600,
+              "duration": 1793962400,
               "status": "passed"
             },
             "match": {
@@ -376,7 +292,7 @@
         "after": [
           {
             "result": {
-              "duration": 635320800,
+              "duration": 635863900,
               "status": "passed"
             },
             "match": {
@@ -389,7 +305,7 @@
         "steps": [
           {
             "result": {
-              "duration": 536419100,
+              "duration": 567463400,
               "status": "passed"
             },
             "line": 26,
@@ -428,6 +344,6 @@
     "description": "As a user you need to open Instagram Page",
     "id": "create-account-on-instagram",
     "keyword": "Feature",
-    "uri": "Instagram_Login_FF.feature"
+    "uri": "src/test/resources/Features/Instagram_Login_FF.feature"
   }
 ]

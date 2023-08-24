@@ -7,7 +7,7 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features = {"src\\test\\resources\\Features"},
+		features = {"src\\test\\resources\\Features\\Instagram_Login_FF.feature"},
 		glue = {"StepDefinitions"},
 		tags = {"@RegressionTest,@FunctionalTest","~@SmokeTest"},
 		monochrome=true,	

@@ -27,22 +27,21 @@ public class WebPage_Navigation_Selenium {
 	public static void main(String args[]) throws IOException, InterruptedException {
 
 		WebPage_Navigation_Selenium wp_nav = new WebPage_Navigation_Selenium();
-		System.setProperty("webdriver.chrome.driver",  "E:\\Cucumber\\chromedriver_win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver",  "E:\\Cucumber\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
 		driv1 = new ChromeDriver();
 		//wp_nav.Instagram();
 		//wp_nav.Facebook();
-		//		wp_nav.Google();
+		//wp_nav.Google();
+		//wp_nav.Radio_Button();
 
-		//		wp_nav.Radio_Button();
-
-		wp_nav.Drop_Down();
+		//wp_nav.Drop_Down();
 
 		//		wp_nav.Drag_Drop() ;
 		//		wp_nav.Scroll_Down();
 		//		wp_nav.Alerts();
 		//wp_nav.Drop_Down_Without_Select();
 		//wp_nav.Check_Box();
-		//wp_nav.Broken_Link();
+		wp_nav.Broken_Link();
 		//wp_nav.Java_Script();
 	}
 
@@ -67,8 +66,8 @@ public class WebPage_Navigation_Selenium {
 
 		WebElement facebook_button = driv1.findElement(By.xpath("//*[@id=\"loginForm\"]/div[1]/div[5]"));
 		facebook_button.click();
-		File Facebook_Screenshot = ((TakesScreenshot)driv1).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(Facebook_Screenshot, new File("C:\\Users\\gaura\\eclipse-workspace\\maven_artifact\\Selenium Screenshots\\Facebook.jpg"));
+		File Facebook_screenshot = ((TakesScreenshot)driv1).getScreenshotAs(OutputType.FILE);
+		FileUtils.copyFile(Facebook_screenshot, new File("C:\\Users\\gaura\\eclipse-workspace\\maven_artifact\\Selenium Screenshots\\Facebook.jpg"));
 		driv1.navigate().back();
 		Thread.sleep(1000);
 
@@ -85,16 +84,16 @@ public class WebPage_Navigation_Selenium {
 
 	public void Radio_Button() throws IOException, InterruptedException {
 		driv1.get("file:///C:/Users/gaura/eclipse-workspace/maven_artifact/Selenium Screenshots/RadioButton.html");
-		driv1.findElement(By.xpath("//input[@value= 'Potato']")).click();
+		driv1.findElement(By.xpath("//input[@value= 'CSS']")).click();
 
 
 
 	}
 
 	public void Drop_Down() throws IOException, InterruptedException {
-		driv1.get("file:///C:\\Users\\gaura\\OneDrive\\Documents\\GitHub\\maven_artifact_repo\\maven_artifact\\Selenium Screenshots/DropDown.html");
-		Select dropdown = new Select (driv1.findElement(By.id("testingDropdown")));
-		dropdown.selectByVisibleText("Database Testing");
+		driv1.get("file:///C:\\Users\\gaura\\eclipse-workspace\\maven_artifact\\Selenium Screenshots\\DropDown.html");
+		Select dropdown = new Select (driv1.findElement(By.id("cars")));
+		dropdown.selectByVisibleText("Audi");
 		
 	}
 	
@@ -199,5 +198,28 @@ public class WebPage_Navigation_Selenium {
 
 	}
 
+	
+	public void Broken_Image () {
+		
+		String page = "file:///C:/Users/gaura/OneDrive/Documents/GitHub/maven_artifact_repo/maven_artifact/Selenium%20Screenshots/broken_image.html";
+		int  iBrokenImageCount = 0;
+		driv1.get(page);
+		List<WebElement> images_list = driv1.findElements(By.tagName("img"));
+		 
+		for (WebElement img : images_list)
+         {
+             if (img != null)
+             {
+                 if (img.getAttribute("naturalWidth").equals("0"))
+                 {
+                     System.out.println(img.getAttribute("outerHTML") + " is broken.");
+                     iBrokenImageCount++;
+                 }
+             }
+         }
+	
+	}
 }
+
+
 
